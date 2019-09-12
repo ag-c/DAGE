@@ -20,6 +20,12 @@ namespace AntlrGrammarEditor
 
         public Dictionary<string, List<CodeInsertion>> GrammarActionsTextSpan { get; } = new Dictionary<string, List<CodeInsertion>>();
 
+        public List<string> TokenNames { get; set; } = new List<string>();
+
+        public List<string> ChannelNames { get; set; } = new List<string>();
+
+        public List<string> ModeNames { get; set; } = new List<string>();
+
         public List<string> Rules { get; set; } = new List<string>();
 
         public List<ParsingError> Errors { get; } = new List<ParsingError>();
